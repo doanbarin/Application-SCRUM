@@ -4,8 +4,8 @@ import javax.swing.*;
 import java.awt.event.*;
 
 public class Cong extends javax.swing.JFrame{
-    public static void main(String[] args) {
-        // Tạo cửa sổ
+	public Cong() {
+		// Tạo cửa sổ
         JFrame frame = new JFrame("Cộng hai số");
         frame.setSize(350, 200);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -59,5 +59,8 @@ public class Cong extends javax.swing.JFrame{
 
         // Hiển thị
         frame.setVisible(true);
+	}
+    public static void main(String[] args) {
+        new Cong();
     }
 }
